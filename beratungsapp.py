@@ -222,7 +222,7 @@ def main():
         ev = st.number_input("Fahrleistung [km]", 0, 50000, 15000)
         pv = st.slider("PV-Leistung [kWp]", 0.0, 20.0, 10.0)
         dn = st.number_input("Dachneigung [°]", 0, 60, 30)
-        ar = st.slider("Ausrichtung [°]", -90, 90, 0)
+        ar = st.slider("Ausrichtung (0=Süd, 90=West,-90=West) [°]", -90, 90, 0)
         bat = st.slider("Speicher [kWh]", 0.0, 20.0, 10.0)
         enwg = st.selectbox("§ 14a EnWG Modul", [1])
         smart = st.toggle("Optimierung aktivieren", True)
